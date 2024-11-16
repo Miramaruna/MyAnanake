@@ -1,0 +1,822 @@
+﻿{% load 	static %}
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Ananke</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+	
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/skeleton.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/layout.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />	
+	<link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/flat_filled_styles.css' %}"><!--SVG Animation Styles-->
+	<link rel="stylesheet" href="{% static 'css/retina.css' %}"/>
+	
+
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{% static 'favicon.png' %}">
+	<link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'apple-touch-icon-114x114.png' %}">
+	
+	
+	
+</head>
+<body class="royal_loader">	
+	<!-- Primary Page Layout
+	================================================== -->
+
+	
+	
+		<div id="menu-wrap" class="menu-back cbp-af-header">
+			<div class="container">
+				<div class="sixteen columns">
+					<div class="logo"></div>
+					<ul class="slimmenu">
+						<li> 
+							<a class="scroll" href="#home">Дом</a>
+						</li>
+						<li>
+							<a class="scroll" href="#about">о</a>
+						</li>
+						<li>
+							<a class="scroll" href="#work">работа</a>
+						</li>
+						<li> 
+							<a class="scroll" href="#services">услуги</a>
+						</li>
+						<li> 
+							<a class="scroll" href="#blog">Журнал</a>
+						</li>
+						<li>
+							<a class="scroll" href="#contact">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+
+			<div id="home">	
+				<div class="just_pattern"></div>
+				<div class="parallax-home"></div>	
+				<div class="small-text"><div class="cl-effect-5"><a class="scroll" href="#work"><span data-hover="portfolio">Портфель</span></a> <a class="scroll" href="#contact"><span data-hover="contact">Контакты</span></a></div></div>
+				<div class="social-top">
+					<ul class="list-social">
+						<li class="icon-soc tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+							<a href="{{ home.twitter }}">&#xf099;</a>
+						</li>
+						<li class="icon-soc tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+							<a href="{{ home.facebook }}">&#xf09a;</a>
+						</li>
+						<li class="icon-soc tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+							<a href="{{ home.github}}">&#xf09b;</a>
+						</li>
+						<li class="icon-soc tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
+							<a href="{{ home.google }}">&#xf0d5;</a>
+						</li>
+					</ul>	
+				</div>	
+				<div class="big-text">
+					<ul class="flippy">
+						<li><span>Мы ананке</span></li>
+						<li><span>РОЖДЕНЫ В ТВОРЧЕСТВЕ</span></li>
+						<li><span>СОСТРЕДОТОЧЕНЫ НА СТРАТЕГИИ</span></li>
+					</ul>
+				</div>								
+				<a class="scroll" href="#about"><div class="scroll-btn tipped" data-title="about agency"  data-tipper-options='{"direction":"top","follow":"true"}'></div></a>
+			</div>
+
+			
+			<div id="about">
+				<div class="container">
+					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+						<div class="header-text">
+							<div class="header-shadow-text">О нас</div>
+							<h1>О нас</h1>
+							<p>МЫ — ТЕПЛАЯ КОМАНДА КРЕАТИВОВ, ДИЗАЙНЕРОВ И РАЗРАБОТЧИКОВ, РАБОТАЮЩИХ ВМЕСТЕ ДЛЯ СОЗДАНИЯ КРАСИВЫХ, ПРИВЛЕКАТЕЛЬНЫХ ЦИФРОВЫХ ВПЕЧАТЛЕНИЙ.</p>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div id="about-what-we-do">
+					<div class="container">
+						<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
+							<div class="icon-left1">&#xf0c6;</div>
+							<h5>Сеть</h5>
+							<p>Но на самом деле мы и обвиняем их, и ведем со справедливой ненавистью тех, кто этого заслуживает.</p>
+						</div>
+						<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
+							<div class="icon-left1">&#xf080;</div>
+							<h5>Аналитика</h5>
+							<p>Но для того, чтобы вы могли видеть, откуда рождается вся эта ошибка, это выбор выбора и ничего.</p>
+						</div>
+						<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
+							<div class="icon-left1">&#xf120;</div>
+							<h5>Разработка</h5>
+							<p class="padding-bottom-project">В свободное время, когда у нас есть возможность ничего не выбирать.</p>
+						</div>
+					</div>
+				</div>	
+				<div class="video-sections">
+					<div class="video-section-1">	
+						<div class="just_pattern"></div>
+						<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" poster="{% static 'images/1.jpg' %}"> 
+							<source src="videos/video.webm" type="video/webm"> 
+							<source src="videos/video.mp4" type="video/mp4"> 
+							<source src="videos/video.ogg" type="video/ogg"> 
+						</video>
+						<div class="text-over-video">День в офисе</div>	
+					</div>	
+					<div class="video-section-2">	
+						<div class="container">
+							<div class="nine columns padding-top-video-sec2" data-scrollreveal="enter right and move 150px over 1s">
+								<h5>Что мы делаем</h5>
+								<p>Когда горы родят своих партнеров, перья и великий толчок, родится нелепая мышь.</p>
+							</div>
+							<div class="clear"></div>
+							<div class="nine columns" data-scrollreveal="enter right and move 150px over 1s">
+								<h5>Чего мы достигаем</h5>
+								<p>Когда горы родят своих партнеров, перья и великий толчок, родится нелепая мышь.</p>
+							</div>
+							<div class="clear"></div>
+							<div class="nine columns" data-scrollreveal="enter right and move 150px over 1s">
+								<h5>На конец</h5>
+								<p>Когда горы родят своих партнеров, перья и великий толчок, родится нелепая мышь.</p>
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</div>
+
+			
+			<div id="team">
+				<div class="container">
+					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+						<div class="header-text">
+							<div class="header-shadow-text">GEEKS</div>
+							<h1>Сотрудники</h1>
+							<p>Сотрудники GEEKS</p>
+						</div>
+					</div>
+				</div>
+				{% for main in main %}
+				<div class="container">	
+					<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">
+						<div class="team-wrap">	
+							<img src="{{ main.photo.url }}" alt=""/>
+							<h5>{{ main.title }}</h5>
+							<p>{{ main.description }}</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09a;</a>
+									</li>
+									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>								
+						</div>
+					</div>
+				</div>
+				{% endfor %}		
+			</div>		
+					<!-- <div class="four columns" data-scrollreveal="enter left and move 150px over 1s">	
+						<div class="team-wrap">	
+							<img src="{% static 'images/team22.jpg' %}" alt=""/>
+							<h5>Сыймык</h5>
+							<p>Учитель программирования</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09a;</a>
+									</li>
+									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>	
+					<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
+						<div class="team-wrap">	
+							<img src="{% static 'images/team33.jpg' %}" alt=""/>
+							<h5>Кудбухон</h5>
+							<p>Ментор и помощник преподов</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09a;</a>
+									</li>
+									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>	
+					<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
+						<div class="team-wrap">	
+							<img src="{% static 'images/team44.jpg' %}" alt=""/>
+							<h5>Не помню</h5>
+							<p>Ментор 2 месяца</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09a;</a>
+									</li>
+									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div> -->	
+			
+			
+			<div id="sep1">	
+				<div class="just_pattern"></div>
+				<div class="parallax"></div>
+						<div class="slideshow" id="slideshow">
+							<ol class="slides">
+								<li class="current">
+									<div class="description">
+										<h4>Слайдшоу контента</h4>
+										<p>Этот слайдер работает с трехмерной перспективой и выполняет несколько интересных анимаций на изображениях справа.</p>
+									</div>
+									<div class="tiltview col">
+										<a href="#"><img src="{% static 'images/1_screen.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/2_screen.jpg' %}" alt=""/></a>
+									</div>
+								</li>
+								<li>
+									<div class="description">
+										<h4>CSS Animations</h4>
+										<p>We are using 12 different animations for showing and hiding the items of a slide. The animations are defined by randomly adding data-attributes called <code>data-effect-in</code> and <code>data-effect-out</code> for every slide. </p>
+									</div>
+									<div class="tiltview row">
+										<a href="#"><img src="{% static 'images/3_mobile.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/4_mobile.jpg' %}" alt=""/></a>
+									</div>
+								</li>
+								<li>
+									<div class="description">
+										<h4>Tilted Items</h4>
+										<p>The perspective view is achieved by adding a perspective value to the slide list item and tilting a division that contains the two screenshots.</p>
+									</div>
+									<div class="tiltview col">
+										<a href="#"><img src="{% static 'images/5_screen.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/6_screen.jpg' %}" alt=""/></a>
+									</div>
+								</li>
+								<li>
+									<div class="description">
+										<h4>Column or Row</h4>
+										<p>The items in the tilted container are either laid out in a column or in a row. For some directions we need to adjust the animation delays for the items, since we don't want the items to overlap each other when they move in or out.</p>
+									</div>
+									<div class="tiltview row">
+										<a href="#"><img src="{% static 'images/1_mobile.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/2_mobile.jpg' %}" alt=""/></a>
+									</div>
+								</li>
+								<li>
+									<div class="description">
+										<h4>Responsiveness</h4>
+										<p>For smaller screens, the items on the right hand side will become less opaque and serve as decoration only. The focus will be on the description which will occupy all the width.</p>
+									</div>
+									<div class="tiltview col">
+										<a href="#"><img src="{% static 'images/3_screen.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/4_screen.jpg' %}" alt=""/></a>
+									</div>
+								</li>
+								<li>
+									<div class="description">
+										<h4>Navigation</h4>
+										<p>For the "line" navigation we use a little trick to make the clickable area a bit bigger: we add a thick white border to the top and bottom of the span. Since the border is part of the element, it will be part of the clickable zone.</p>
+									</div>
+									<div class="tiltview row">
+										<a href="#"><img src="{% static 'images/5_mobile.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/6_mobile.jpg' %}" alt=""/></a>
+									</div>
+								</li>
+							</ol>
+						</div><!-- /slideshow -->		
+			</div>			
+			
+			
+			<div id="work">	
+				<div class="container">
+					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+						<div class="header-text">
+							<div class="header-shadow-text">work</div>
+							<h1>работа</h1>
+							<p>МЫ ВЕРИМ, ЧТО НАША РАБОТА ГОВОРИТ САМА ЗА СЕБЯ. ПРОСМОТРИТЕ НАШИ ПОСЛЕДНИЕ ПРОЕКТЫ НИЖЕ</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="portfolio"></div>
+
+
+				<div class="expander-wrap relative">
+					<div id="expander-wrap">
+						<p class="cls-btn"><a class="close">X</a></p>
+						<div class="expander-inner"></div>
+					</div>
+				</div>
+
+			
+				<div class="clear"></div>			
+				<div class="container">
+					<div class="sixteen columns">
+						<div id="portfolio-filter">
+							<ul id="filter">
+								<li><a href="#" class="current" data-filter="*" title="">Показать все</a></li>
+								<li><a href="#" data-filter=".photography" title="">Фотографии</a></li>
+								<li><a href="#" data-filter=".illustration1" title="">Иллюстрации</a></li>
+								<li><a href="#" data-filter=".motion-graphics" title="">Графика движения</a></li>
+								<li><a href="#" data-filter=".web-design" title="">Веб дизайн</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="portfolio-wrap">
+					<li class="portfolio-box photography web-design">	
+						<a class="expander" href="project2.html" title="">
+							<img  src="{% static 'images/gallery/1.jpg' %}" alt="" />	
+							<div class="mask"></div>
+							<h4>Во всем времени</h4>
+						</a>	
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/1.jpg' %}" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>	
+					</li>
+					<li class="portfolio-box illustration1 motion-graphics">	
+						<a class="expander" href="project1.html" title="">
+							<img  src="{% static 'images/gallery/2.jpg' %}" alt="" />
+							<div class="mask"></div>	
+							<h4>Золотой орел</h4>	
+						</a>	
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/2.jpg' %}" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>		
+					</li>		
+					<li class="portfolio-box motion-graphics photography">	
+						<a class="expander" href="project3.html" title="">
+							<img  src="{% static 'images/gallery/3.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h4>Во всем времени</h4>
+						</a>	
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/3.jpg' %}" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>				
+					</li>	
+					<li class="portfolio-box web-design illustration1">
+						<a class="expander" href="project4.html" title="">
+							<img  src="{% static 'images/gallery/4.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h4>Исправленный магазин</h4>	
+						</a>	
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/4.jpg' %}" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a> 			
+					</li>	
+					<li class="portfolio-box photography web-design">	
+						<a class="expander" href="project2.html" title="">
+							<img  src="{% static 'images/gallery/5.jpg' %}" alt="" />	
+							<div class="mask"></div>	
+							<h4>Катерия</h4>
+						</a>	
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/5.jpg' %}" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>			
+					</li>
+					<li class="portfolio-box illustration1 motion-graphics">	
+						<a class="expander" href="project1.html" title="">
+							<img  src="{% static 'images/gallery/6.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h4>>Набор «5-летие»</h4>
+						</a>		
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/6.jpg' %}" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>		
+					</li>	
+					<li class="portfolio-box motion-graphics photography">
+						<a class="expander" href="project3.html" title="">
+							<img  src="{% static 'images/gallery/7.jpg' %}" alt="" />	
+							<div class="mask"></div>
+							<h4>Катерия</h4>
+						</a>	
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/7.jpg' %}" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>			
+					</li>	
+					<li class="portfolio-box web-design illustration1">
+						<a class="expander" href="project4.html" title="">
+							<img  src="{% static 'images/gallery/8.jpg' %}" alt="" />	
+							<div class="mask"></div>
+							<h4>Дэн Финк</h4>
+						</a>	
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/8.jpg' %}" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>			
+					</li>		
+				</ul>
+				<div class="clear"></div>
+				<div id="link-work">	
+					<div class="container">
+						<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+							<h6>готовы начать разговор?</h6>
+							<div class="cl-effect-5"><a class="scroll" href="#contact"><span data-hover="contact us">Нажмите</span></a></div>
+						</div>
+					</div>		
+				</div>	
+			</div>				
+
+
+			<div id="sep2">	
+				<div class="just_pattern"></div>
+				<div class="parallax2"></div>	
+				<div class="container z-index">
+					<div class="four columns">
+						<div class="facts-wrap">
+							<div class="facts-wrap-num"><span class="counter">87</span></div>
+							<h5>Клиенты</h5> 
+						</div>
+					</div>
+					<div class="four columns">
+						<div class="facts-wrap">
+							<div class="facts-wrap-num"><span class="counter">25</span></div>
+							<h5>Награды</h5> 
+						</div>
+					</div>
+					<div class="four columns">
+						<div class="facts-wrap">
+							<div class="facts-wrap-num"><span class="counter">68</span></div>
+							<h5>Проэкты</h5> 
+						</div>
+					</div>
+					<div class="four columns">
+						<div class="facts-wrap">
+							<div class="facts-wrap-num"><span class="counter">46</span></div>
+							<h5>Почта</h5> 
+						</div>
+					</div>
+				</div>						
+			</div>
+
+
+
+			
+			
+			<div id="services">	
+				<div class="container">
+					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+						<div class="header-text">
+							<div class="header-shadow-text">Услуги</div>
+							<h1>Услуги</h1>
+							<p>ПРОСТО ПРОВЕРЬТЕ ВСЕ СПИСКИ УСЛУГ НИЖЕ, ЧТОБЫ ПОЛУЧИТЬ ОБЩЕЕ ПРЕДСТАВЛЕНИЕ О ТОМ, ЧТО МЫ МОЖЕМ ПРЕДОСТАВИТЬ</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
+						<div class="services-offer">
+							<span class="svg-icon flat-filled" id="filled-brush"></span>
+							<h5>Креативный дизайн</h5>
+							<p>Со своими товарищами, рожденными и выросшими, и огромной массой людей.</p>
+						</div>
+					</div>
+					<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
+						<div class="services-offer">
+							<span class="svg-icon flat-filled" id="filled-phone"></span>
+							<h5>Адаптивный дизайн</h5>
+							<p>Со своими товарищами, рожденными и выросшими, и огромной массой людей.</p>
+						</div>
+					</div>
+					<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
+						<div class="services-offer">
+							<span class="svg-icon flat-filled" id="filled-message"></span>
+							<h5>Отличная поддержкаt</h5>
+							<p>Со своими товарищами, рожденными и выросшими, и огромной массой людей.</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
+						<div class="services-offer">
+							<span class="svg-icon flat-filled" id="filled-clock"></span>
+							<h5>быстрая поддержка</h5>
+							<p>Со своими товарищами, рожденными и выросшими, и огромной массой людей.</p>
+						</div>
+					</div>
+					<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
+						<div class="services-offer">
+							<span class="svg-icon flat-filled" id="filled-email"></span>
+							<h5>Контактная форма</h5>
+							<p>Со своими товарищами, рожденными и выросшими, и огромной массой людей.</p>
+						</div>
+					</div>
+					<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
+						<div class="services-offer">
+							<span class="svg-icon flat-filled" id="filled-heart"></span>
+							<h5>Зделано с любовью</h5>
+							<p>Со своими товарищами, рожденными и выросшими, и огромной массой людей.</p>
+						</div>
+					</div>
+				</div>			
+			</div>
+
+			<div id="plans">	
+				<div class="container">
+					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+						<div class="header-text">
+							<div class="header-shadow-text">наши планы</div>
+							<h1>наши планы</h1>
+							<p>ВЫ МОЖЕТЕ НАСТРОИТЬ ТАБЛИЦУ ЦЕН С ПОМОЩЬЮ СИСТЕМЫ СЕТКИ, ЧТОБЫ СДЕЛАТЬ ЕЕ АДАПТИВНОЙ ДЛЯ МАЛЫХ УСТРОЙСТВ.</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
+						<div class="plans-offer">
+							<h3>$9.99<span> - месяц</span></h3>
+							<h6>Стандард</h6>
+							<p><strong>24/7</strong> ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</p>
+							<p><strong>15</strong> ПРОЭКТОВ</p>
+							<p><strong>5GB</strong> ПАМЯТЬ</p>
+							<p>НЕОГР. КОЛИЧЕСТВО ПОЛЬЗОВАТЕЛЕЙ</p>
+							<div class="cl-effect-5"><a href="#"><span data-hover="sing up">подписаться</span></a></div>
+						</div>
+					</div>
+					<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
+						<div class="plans-offer-gold">
+							<h3>$17.99<span> - месяц</span></h3>
+							<h6>Золото</h6>
+							<p><strong>24/7</strong> ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</p>
+							<p><strong>25</strong> ПРОЭКТОВ</p>
+							<p><strong>15GB</strong> ПАМЯТЬ</p>
+							<p>НЕОГР. КОЛИЧЕСТВО ПОЛЬЗОВАТЕЛЕЙ</p>
+							<div class="cl-effect-5"><a href="#"><span data-hover="sing up">подписаться</span></a></div>
+						</div>
+					</div>
+					<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
+						<div class="plans-offer">
+							<h3>$34.99<span> - месяц</span></h3>
+							<h6>Премиум</h6>
+							<p><strong>24/7</strong> ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</p>
+							<p><strong>100</strong> ПРОЭКТОВ</p>
+							<p><strong>50GB</strong> ПАМЯТЬ</p>
+							<p>НЕОГР. КОЛИЧЕСТВО ПОЛЬЗОВАТЕЛЕЙ</p>
+							<div class="cl-effect-5"><a href="#"><span data-hover="sing up">подписаться</span></a></div>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+			<div id="logos">
+				<div class="container">	
+					<div class="sixteen columns">
+						<div class="logos-wrap">
+							<img  src="{% static 'images/logos/1.png' %}" alt="" />	
+						</div>
+						<div class="logos-wrap">
+							<img  src="{% static 'images/logos/2.png' %}" alt="" />	
+						</div>	
+						<div class="logos-wrap">
+							<img  src="{% static 'images/logos/3.png' %}" alt="" />	
+						</div>	
+						<div class="logos-wrap">
+							<img  src="{% static 'images/logos/4.png' %}" alt="" />	
+						</div>	
+						<div class="logos-wrap">
+							<img  src="{% static 'images/logos/5.png' %}" alt="" />	
+						</div>	
+						<div class="logos-wrap">
+							<img  src="{% static 'images/logos/2.png' %}" alt="" />	
+						</div>		
+					</div>
+				</div>		
+			</div>		
+
+
+			<div id="blog">	
+				<div class="just_pattern"></div>
+				<div class="parallax1"></div>
+				<div class="container z-index">	
+					<div class="one-third column">
+						<div class="blog-post">
+							<img  src="{% static 'images/blog/1.jpg' %}" alt="" />
+							<h5>блог пост</h5>
+							<p>Когда горы родят своих партнеров, перья и великий толчок, родится нелепая мышь.</p>
+							<p><span>26.2.2014.</span><span> 3 коменнты</span></p>
+						</div>
+					</div>	
+					<div class="one-third column">
+						<div class="blog-post">
+							<img  src="{% static 'images/blog/2.jpg' %}" alt="" />
+							<h5>блог пост</h5>
+							<p>Когда горы родят своих партнеров, перья и великий толчок, родится нелепая мышь.</p>
+							<p><span>17.2.2014.</span><span> 7 коменнты</span></p>
+						</div>
+					</div>	
+					<div class="one-third column">
+						<div class="blog-post">
+							<img  src="{% static 'images/blog/3.jpg' %}" alt="" />
+							<h5>блог пост</h5>
+							<p>Когда горы родят своих партнеров, перья и великий толчок, родится нелепая мышь.</p>
+							<p><span>12.2.2014.</span><span> 4 коменнты</span></p>
+						</div>
+					</div>
+				</div>		
+			</div>			
+			
+			
+			
+			
+			
+			
+			<div id="contact">	
+				<div class="container">
+					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+						<div class="header-text">
+							<div class="header-shadow-text">Контакты</div>
+							<h1>Контакты</h1>
+							<p>Мы создаем лучшие возможности для вашего бизнеса.</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">	
+					<form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
+						<div class="four columns">
+							<label for="name">Ваще имя: * 
+								<span class="error" id="err-name">пожалуйста введите ваще имя</span>
+							</label>
+							<input name="name" id="name" type="text" />
+						</div>
+						<div class="four columns">
+							<label for="email">Почта: * 
+								<span class="error" id="err-email">пожалуйста введите вашу почту</span>
+								<span class="error" id="err-emailvld">e-mail is not a valid format</span>
+							</label>
+							<input name="email" id="email" type="text" />
+						</div>
+						<div class="five columns">
+							<label for="message">Расскажите нам все:</label>
+							<textarea name="message" id="message"></textarea>
+						</div>
+						<div class="three columns">
+							<div id="button-con"><button class="send_message" id="send">Предоставить</button></div>
+						</div>
+						<div class="clear"></div>	
+						<div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
+						<div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
+						<div class="error" id="err-state"></div>
+					</form>	
+					<div class="clear"></div>
+					<div id="ajaxsuccess">Successfully sent!!</div>	
+					<div class="clear"></div>
+					<div class="eight columns" data-scrollreveal="enter left and move 150px over 1s">
+						<div class="contact-wrap">
+							<p><i class="icon-contact1">&#xf095;</i><span>позвоните нам:</span> (381) 267-6386<small><em>Понедельник–пятница | 9:00–17:00 (GMT +1)</em></small></p>
+						</div>
+					</div>
+					<div class="eight  columns" data-scrollreveal="enter right and move 150px over 1s">	
+						<div class="contact-wrap">
+							<p><i class="icon-contact1">&#xf041;</i><span> Посетите нас:</span> First Street, Sunrise Avenue, Нью-Йорк, США</p>	
+						</div>
+					</div>	
+					<div class="sixteen columns" data-scrollreveal="enter bottom and move 150px over 1s">	
+						<a class="button-map close-map"><span>Найдите нас на карте</span></a>
+					</div>
+				</div>
+				<div id="google_map"></div>				
+			</div>
+			
+
+
+			
+			<div id="footer">
+				<a class="scroll" href="#home"><div class="back-top">&#xf102;</div></a>	
+				<div class="container">
+					<div class="sixteen columns">
+						<p>Зделано с<i class="icon-footer">&#xf004;</i>и<i class="icon-footer">&#xf0f4;</i>в сербии</p>
+						<p><small>Шаблон: Ananke от ig design</small></p>
+					</div>
+				</div>	
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+   
+
+
+	
+	<!-- JAVASCRIPT
+    ================================================== -->
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script>	 
+<script type="text/javascript" src="{% static 'js/royal_preloader.min.js' %}"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+            Royal_Preloader.config({
+                mode:           'text', // 'number', "text" or "logo"
+                text:           'Ananke',
+                timeout:        0,
+                showInfo:       true,
+                opacity:        1,
+                background:     ['#FFFFFF']
+            });
+})(jQuery);
+</script>
+<script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/cbpAnimatedHeader.min.js' %}"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+   var pos = 0;
+
+    window.setInterval(function(){
+      pos++;
+      document.getElementsByClassName('parallax-home')[0].style.backgroundPosition = pos + "px 0px";
+    }, 40);
+})(jQuery);
+</script>
+<script type="text/javascript" src="{% static 'js/retina-1.1.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.easing.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/flippy.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.fitvids.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/tiltSlider.js' %}"></script>
+<script>
+(function($) { "use strict";
+	new TiltSlider( document.getElementById( 'slideshow' ) );
+})(jQuery);
+</script>
+<script type="text/javascript" src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.localscroll-1.2.7-min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.scrollTo-1.4.2-min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/svg_inject_flat_icons_filled.js' %}"></script><!--Inject SVG and Toggle CSS Styles-->
+<script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/template.js' %}"></script>  	  
+<!-- End Document
+================================================== -->
+</body>
+</html>
