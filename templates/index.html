@@ -9,6 +9,9 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Ananke</title>
+
+	<link rel="website-icon" type="jpg"
+	href="{% static 'apple-touch-icon-114x114.' %}">
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -139,9 +142,9 @@
 					<div class="video-section-1">	
 						<div class="just_pattern"></div>
 						<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" poster="{% static 'images/1.jpg' %}"> 
-							<source src="videos/video.webm" type="video/webm"> 
-							<source src="videos/video.mp4" type="video/mp4"> 
-							<source src="videos/video.ogg" type="video/ogg"> 
+							<source src="{% static 'videos/video.webm' %}" type="video/webm"> 
+							<source src="{% static 'videos/video.mp4' %}" type="video/mp4"> 
+							<source src="{% static 'videos/video.ogg' %}" type="video/ogg"> 
 						</video>
 						<div class="text-over-video">День в офисе</div>	
 					</div>	
@@ -171,16 +174,16 @@
 				<div class="container">
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
-							<div class="header-shadow-text">GEEKS</div>
+							<div class="header-shadow-text">Сотрудники</div>
 							<h1>Сотрудники</h1>
-							<p>Сотрудники GEEKS</p>
+							<p>Сотрудники</p>
 						</div>
 					</div>
 				</div>
 				{% for main in main %}
 				<div class="container">	
 					<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">
-						<div class="team-wrap">	
+						<div class="team-wrap">		
 							<img src="{{ main.photo.url }}" alt=""/>
 							<h5>{{ main.title }}</h5>
 							<p>{{ main.description }}</p>
@@ -203,82 +206,9 @@
 							</div>								
 						</div>
 					</div>
-				</div>
-				{% endfor %}		
+					{% endfor %}
+				</div>		
 			</div>		
-					<!-- <div class="four columns" data-scrollreveal="enter left and move 150px over 1s">	
-						<div class="team-wrap">	
-							<img src="{% static 'images/team22.jpg' %}" alt=""/>
-							<h5>Сыймык</h5>
-							<p>Учитель программирования</p>
-							<div class="team-line"></div>
-							<div class="social-team">
-								<ul class="team-social">
-									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf099;</a>
-									</li>
-									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09a;</a>
-									</li>
-									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09b;</a>
-									</li>
-									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf0d5;</a>
-									</li>
-								</ul>	
-							</div>
-						</div>
-					</div>	
-					<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
-						<div class="team-wrap">	
-							<img src="{% static 'images/team33.jpg' %}" alt=""/>
-							<h5>Кудбухон</h5>
-							<p>Ментор и помощник преподов</p>
-							<div class="team-line"></div>
-							<div class="social-team">
-								<ul class="team-social">
-									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf099;</a>
-									</li>
-									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09a;</a>
-									</li>
-									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09b;</a>
-									</li>
-									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf0d5;</a>
-									</li>
-								</ul>	
-							</div>
-						</div>
-					</div>	
-					<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
-						<div class="team-wrap">	
-							<img src="{% static 'images/team44.jpg' %}" alt=""/>
-							<h5>Не помню</h5>
-							<p>Ментор 2 месяца</p>
-							<div class="team-line"></div>
-							<div class="social-team">
-								<ul class="team-social">
-									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf099;</a>
-									</li>
-									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09a;</a>
-									</li>
-									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09b;</a>
-									</li>
-									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf0d5;</a>
-									</li>
-								</ul>	
-							</div>
-						</div>
-					</div> -->	
-			
 			
 			<div id="sep1">	
 				<div class="just_pattern"></div>
@@ -291,14 +221,14 @@
 										<p>Этот слайдер работает с трехмерной перспективой и выполняет несколько интересных анимаций на изображениях справа.</p>
 									</div>
 									<div class="tiltview col">
-										<a href="#"><img src="{% static 'images/1_screen.jpg' %}" alt=""/></a>
-										<a href="#"><img src="{% static 'images/2_screen.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/1_screen.jpg' %}" alt="a"/></a>
+										<a href="#"><img src="{% static 'images/2_screen.jpg' %}" alt="b"/></a>
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>CSS Animations</h4>
-										<p>We are using 12 different animations for showing and hiding the items of a slide. The animations are defined by randomly adding data-attributes called <code>data-effect-in</code> and <code>data-effect-out</code> for every slide. </p>
+										<h4>CSS анимация</h4>
+										<p>Мы используем 12 различных анимаций для показа и скрытия элементов слайда. Анимации определяются путем случайного добавления атрибутов данных, называемых <code>входной эффект данных</code> и <code>вывод данных</code> на все слайды. </p>
 									</div>
 									<div class="tiltview row">
 										<a href="#"><img src="{% static 'images/3_mobile.jpg' %}" alt=""/></a>
@@ -307,8 +237,8 @@
 								</li>
 								<li>
 									<div class="description">
-										<h4>Tilted Items</h4>
-										<p>The perspective view is achieved by adding a perspective value to the slide list item and tilting a division that contains the two screenshots.</p>
+										<h4>Наклоненные предметы</h4>
+										<p>Перспективный вид достигается путем добавления значения перспективы к элементу списка слайдов и наклона раздела, содержащего два снимка экрана.</p>
 									</div>
 									<div class="tiltview col">
 										<a href="#"><img src="{% static 'images/5_screen.jpg' %}" alt=""/></a>
@@ -317,8 +247,8 @@
 								</li>
 								<li>
 									<div class="description">
-										<h4>Column or Row</h4>
-										<p>The items in the tilted container are either laid out in a column or in a row. For some directions we need to adjust the animation delays for the items, since we don't want the items to overlap each other when they move in or out.</p>
+										<h4>Столбец или строка</h4>
+										<p>Предметы в наклоненном контейнере располагаются либо в столбце, либо в ряд. Для некоторых направлений нам необходимо настроить задержки анимации для элементов, поскольку мы не хотим, чтобы элементы перекрывали друг друга при движении внутрь или наружу.</p>
 									</div>
 									<div class="tiltview row">
 										<a href="#"><img src="{% static 'images/1_mobile.jpg' %}" alt=""/></a>
@@ -327,8 +257,8 @@
 								</li>
 								<li>
 									<div class="description">
-										<h4>Responsiveness</h4>
-										<p>For smaller screens, the items on the right hand side will become less opaque and serve as decoration only. The focus will be on the description which will occupy all the width.</p>
+										<h4>Отзывчивость</h4>
+										<p>На экранах меньшего размера элементы справа станут менее непрозрачными и будут служить только украшением. В центре внимания будет описание, которое займет всю ширину.</p>
 									</div>
 									<div class="tiltview col">
 										<a href="#"><img src="{% static 'images/3_screen.jpg' %}" alt=""/></a>
@@ -337,8 +267,8 @@
 								</li>
 								<li>
 									<div class="description">
-										<h4>Navigation</h4>
-										<p>For the "line" navigation we use a little trick to make the clickable area a bit bigger: we add a thick white border to the top and bottom of the span. Since the border is part of the element, it will be part of the clickable zone.</p>
+										<h4>Навигация</h4>
+										<p>Для «линейной» навигации мы используем небольшой трюк, чтобы сделать кликабельную область немного больше: мы добавляем толстую белую рамку вверху и внизу диапазона. Поскольку граница является частью элемента, она будет частью кликабельной зоны.</p>
 									</div>
 									<div class="tiltview row">
 										<a href="#"><img src="{% static 'images/5_mobile.jpg' %}" alt=""/></a>
@@ -703,7 +633,7 @@
 						<div class="four columns">
 							<label for="email">Почта: * 
 								<span class="error" id="err-email">пожалуйста введите вашу почту</span>
-								<span class="error" id="err-emailvld">e-mail is not a valid format</span>
+								<span class="error" id="err-emailvld">e-mail не на нужном формате</span>
 							</label>
 							<input name="email" id="email" type="text" />
 						</div>
@@ -715,12 +645,12 @@
 							<div id="button-con"><button class="send_message" id="send">Предоставить</button></div>
 						</div>
 						<div class="clear"></div>	
-						<div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
-						<div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
+						<div class="error text-align-center" id="err-form">Тута проблема с валидацией проверьте форум!</div>
+						<div class="error text-align-center" id="err-timedout">Подключения к серверу нету!</div>
 						<div class="error" id="err-state"></div>
 					</form>	
 					<div class="clear"></div>
-					<div id="ajaxsuccess">Successfully sent!!</div>	
+					<div id="ajaxsuccess">Успешно отправлено!!</div>	
 					<div class="clear"></div>
 					<div class="eight columns" data-scrollreveal="enter left and move 150px over 1s">
 						<div class="contact-wrap">
@@ -729,7 +659,7 @@
 					</div>
 					<div class="eight  columns" data-scrollreveal="enter right and move 150px over 1s">	
 						<div class="contact-wrap">
-							<p><i class="icon-contact1">&#xf041;</i><span> Посетите нас:</span> First Street, Sunrise Avenue, Нью-Йорк, США</p>	
+							<p><i class="icon-contact1">&#xf041;</i><span> Посетите нас:</span> Первая улицы, Восход Авеньюе, Нью-Йорк, США</p>	
 						</div>
 					</div>	
 					<div class="sixteen columns" data-scrollreveal="enter bottom and move 150px over 1s">	

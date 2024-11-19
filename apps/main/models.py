@@ -16,6 +16,12 @@ class Home(models.Model):
         verbose_name='Google домашней страницы'
     )
 
+    def __str__(self):
+        return 'Домашние ссылки'
+    
+    class Meta:
+        verbose_name_plural = 'Домашние ссылки'
+
 
 class Personal(models.Model):
     title = models.CharField(
@@ -28,7 +34,7 @@ class Personal(models.Model):
     photo = models.ImageField(
         upload_to='image/'
     )
-    gihub = models.URLField(
+    github = models.URLField(
         verbose_name='Ссылка на Github'
     )
     twitter = models.URLField(
@@ -45,4 +51,4 @@ class Personal(models.Model):
         return 'Персонал'
     
     class Meta:
-        verbose_name_plural = 'Настройки'
+        verbose_name_plural = 'Сотрудники'
